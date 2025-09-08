@@ -8,7 +8,7 @@ class AudioManager {
         // 音量设置
         this.volumes = {
             master: 0.8,
-            bgm: 0.6,
+            bgm: 0.3,
             voice: 0.9,
             sfx: 0.7
         };

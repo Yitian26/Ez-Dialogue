@@ -1,7 +1,7 @@
 // 游戏剧情数据结构
 const storyData = {
     // 游戏开始场景
-    startScene: "scene1-intro",
+    startScene: "start_menu",
     
     // 场景数据
     scenes: {
@@ -20,11 +20,26 @@ const storyData = {
         //     ],
         //     nextScene: "下一场景ID"
         // },
+        "start_menu": {
+            id: "start_menu",
+            image: "assets/images/s1-env.jpg",
+            dialogues: [
+                {
+                    text: "欢迎来到互动推理游戏《红发会》！",
+                    choices: [
+                        {
+                            text: "开始游戏",
+                            nextScene: "scene1-intro"
+                        },
+                    ]
+                }
+            ],
+        },
 
         "scene1-intro": {
             id: "scene1-intro",
             image: "assets/images/s1-env.jpg",
-            bgm: "assets/audio/bgm/test_track_001.mp3",
+            bgm: "assets/audio/bgm/pleasant.wav",
             dialogues: [
                 {
                     text:"去年秋天，一个寻常的午后..."
@@ -50,6 +65,7 @@ const storyData = {
         "scene1-d1": {
             id: "scene1-d1",
             video: "assets/videos/longtalk.mp4",
+            bgm:"assets/audio/bgm/doubt.wav",
             dialogues: [
                 {
                     character:"华生",
@@ -119,13 +135,8 @@ const storyData = {
     
     // 音频预加载列表
     preloadAudio: [
-        // "audio/bgm/holmes_theme.mp3",
-        // "audio/bgm/mystery_theme.mp3",
-        // "audio/bgm/investigation_theme.mp3",
-        // "audio/bgm/action_theme.mp3",
-        // "audio/sfx/choice_select.wav",
-        // "audio/sfx/dramatic_reveal.wav",
-        // "audio/sfx/victory.wav",
-        // "audio/sfx/revelation.wav"
+        "assets/audio/bgm/doubt.wav",
+        "assets/audio/bgm/pleasant.wav",
+        "assets/audio/bgm/serious.wav",
     ]
 };
