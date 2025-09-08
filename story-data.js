@@ -185,7 +185,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "我亲爱的先生，你看你这双手，你的右手比左手大多了。你用右手干活，所以右手的肌肉比左手发达"
+                    text: "我亲爱的先生，你看你这双手，你的右手比左手大多了。你用右手干活，所以右手的肌肉比左手发达",
+                    voice:"assets/audio/voice/extra-1-holmes.wav"
                 }
             ],
             nextScene: "scene1-question_1"
@@ -196,7 +197,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "还有别的什么更能说明问题吗？那就是：你右手袖子上足有五寸长的地方闪闪发光，而左袖子靠近手腕经常贴在桌面上的地方打了个整洁的补丁。"
+                    text: "还有别的什么更能说明问题吗？那就是：你右手袖子上足有五寸长的地方闪闪发光，而左袖子靠近手腕经常贴在桌面上的地方打了个整洁的补丁。",
+                    voice:"assets/audio/voice/extra-2-holmes.wav"
                 }
             ],
             nextScene: "scene1-question_1"
@@ -207,7 +209,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "威尔逊",
-                    text: "唔，那么吸鼻烟和共济会会员呢?"
+                    text: "唔，那么吸鼻烟和共济会会员呢?",
+                    voice: "assets/audio/voice/extra-3-wilson.wav"
                 }
             ],
             nextScene: "scene1-answer_1"
@@ -218,7 +221,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "我不会告诉你我是怎么看出来的，因为我不愿把你的理解力看低了，何况你还不顾你们的团体的严格规定，带了一个弓形指南针模样的别针呢。"
+                    text: "我不会告诉你我是怎么看出来的，因为我不愿把你的理解力看低了，何况你还不顾你们的团体的严格规定，带了一个弓形指南针模样的别针呢。",
+                    voice:"assets/audio/voice/extra-4-holmes.wav"
                 }
             ],
             nextScene: "scene1-question_2"
@@ -229,7 +233,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "威尔逊",
-                    text: "那么，中国又怎么样？"
+                    text: "那么，中国又怎么样？",
+                    voice: "assets/audio/voice/extra-5-wilson.wav"
                 }
             ],
             nextScene: "scene1-answer_2"
@@ -240,7 +245,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "你的右手腕上边一点的地方文刺的鱼只能是在中国干的。我对刺花纹作过点研究，甚至还写过这种题材的稿子。用细腻的粉红色给大小不等的鱼着色这种绝技，只有在中国才有。此外，我看见你的表链上还挂着一块中国钱币，那岂不是更加一目了然了吗？"
+                    text: "你的右手腕上边一点的地方文刺的鱼只能是在中国干的。我对刺花纹作过点研究，甚至还写过这种题材的稿子。用细腻的粉红色给大小不等的鱼着色这种绝技，只有在中国才有。此外，我看见你的表链上还挂着一块中国钱币，那岂不是更加一目了然了吗？",
+                    voice: "assets/audio/voice/extra-6-holmes.wav"
                 }
             ],
             nextScene: "scene1-wilson_laugh"
@@ -251,7 +257,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "威尔逊",
-                    text: "好，这个我怎么也想不到啊！我起初想，你简直是神机妙算，但说穿了也就没什么奥妙了。"
+                    text: "好，这个我怎么也想不到啊！我起初想，你简直是神机妙算，但说穿了也就没什么奥妙了。",
+                    voice: "assets/audio/voice/extra-7-wilson.wav"
                 }
             ],
             nextScene: "scene1-holmes_ad"
@@ -262,7 +269,13 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "华生，我现在才想起来，我真不应该这么样摊开来说。要'大智若愚'，你知道，我的名声本来就不怎么样，心眼太实是要身败名裂的。威尔逊先生，你能找到那个广告吗？"
+                    text: "华生，我现在才想起来，我真不应该这么样摊开来说。要'大智若愚'，你知道，我的名声本来就不怎么样，心眼太实是要身败名裂的。",
+                    voice: "assets/audio/voice/extra-8-1-holmes.wav"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "威尔逊先生，你能找到那个广告吗？",
+                    voice: "assets/audio/voice/extra-8-2-holmes.wav"
                 }
             ],
             nextScene: "scene1-twomantalk"
@@ -274,11 +287,13 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "威尔逊先生，请详细讲讲你遇到的奇怪事情吧。"
+                    text: "威尔逊先生，请详细讲讲你遇到的奇怪事情吧。",
+                    voice: "assets/audio/voice/extra-9-holmes.wav"
                 },
                 {
                     character: "威尔逊",
-                    text: "事情是这样的……（案件背景介绍，或其他补充内容）"
+                    text: "事情是这样的……（案件背景介绍，或其他补充内容）",
+                    voice: "assets/audio/voice/extra-10-wilson.wav"
                 }
             ],
             nextScene: "scene4-evening_env"
