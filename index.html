@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红发会 - 互动推理游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 游戏主容器 -->
+    <div id="gameContainer">
+        <!-- 媒体播放区域 -->
+        <div id="mediaContainer">
+            <!-- 视频元素 -->
+            <video id="gameVideo" preload="auto" muted loop class="hidden">
+                <!-- 视频源将通过JavaScript动态加载 -->
+            </video>
+            
+            <!-- 图片元素 -->
+            <img id="gameImage" class="hidden" alt="场景背景">
+            
+            <!-- 媒体控制覆盖层 -->
+            <div id="mediaOverlay" class="hidden">
+                <div id="clickToContinue">点击继续</div>
+            </div>
+            
+            <!-- 视频播放提示 -->
+            <div id="videoPlayPrompt" class="hidden">
+                <div id="playPromptText">
+                    <div>▶️</div>
+                    <div>点击播放视频</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 字幕显示区域 -->
+        <div id="subtitleContainer">
+            <div id="characterName"></div>
+            <div id="subtitleText"></div>
+            <div id="continueIndicator">▼</div>
+        </div>
+
+        <!-- 选择分支区域 -->
+        <div id="choiceContainer" class="hidden">
+            <div id="choiceTitle">请选择...</div>
+            <div id="choiceButtons"></div>
+        </div>
+
+        <!-- 游戏界面 -->
+        <div id="gameUI">
+            <!-- 设置按钮 -->
+            <button id="settingsBtn" class="ui-button">设置</button>
+            
+            <!-- 历史记录按钮 -->
+            <button id="historyBtn" class="ui-button">历史</button>
+        </div>
+
+        <!-- 设置面板 -->
+        <div id="settingsPanel" class="modal hidden">
+            <div class="modal-content">
+                <h3>游戏设置</h3>
+                <div class="setting-item">
+                    <label>主音量</label>
+                    <input type="range" id="masterVolume" min="0" max="100" value="80">
+                </div>
+                <div class="setting-item">
+                    <label>配音音量</label>
+                    <input type="range" id="voiceVolume" min="0" max="100" value="90">
+                </div>
+                <div class="setting-item">
+                    <label>背景音乐音量</label>
+                    <input type="range" id="bgmVolume" min="0" max="100" value="60">
+                </div>
+                <div class="setting-item">
+                    <label>音效音量</label>
+                    <input type="range" id="sfxVolume" min="0" max="100" value="70">
+                </div>
+                <div class="setting-item">
+                    <label>字幕显示速度</label>
+                    <select id="textSpeed">
+                        <option value="slow">慢</option>
+                        <option value="normal" selected>正常</option>
+                        <option value="fast">快</option>
+                    </select>
+                </div>
+                <button id="closeSettings" class="ui-button">关闭</button>
+            </div>
+        </div>
+
+        <!-- 历史记录面板 -->
+        <div id="historyPanel" class="modal hidden">
+            <div class="modal-content">
+                <h3>对话历史</h3>
+                <div id="historyContent"></div>
+                <button id="closeHistory" class="ui-button">关闭</button>
+            </div>
+        </div>
+
+        <!-- 加载界面 -->
+        <div id="loadingScreen">
+            <div class="loading-spinner"></div>
+            <div>加载中...</div>
+        </div>
+
+        <!-- 音频启用提示 -->
+        <div id="audioPrompt" class="modal hidden">
+            <div class="modal-content">
+                <h3>🔊 启用音频</h3>
+                <p>为了获得最佳游戏体验，请点击任意处启用音频播放功能。</p>
+                <p style="font-size: 14px; color: #aaa;">包括背景音乐和角色配音</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 音频元素 -->
+    <audio id="bgmAudio" loop preload="auto"></audio>
+    <audio id="voiceAudio" preload="auto"></audio>
+    <audio id="sfxAudio" preload="auto"></audio>
+
+    <script src="game-engine.js"></script>
+    <script src="audio-manager.js"></script>
+    <script src="story-data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
