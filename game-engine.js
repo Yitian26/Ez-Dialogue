@@ -122,6 +122,12 @@ class GameEngine {
             return;
         }
 
+        // 停止当前正在播放的语音和打字机效果
+        if (this.isTyping) {
+            this.skipTypewriter();
+        }
+        audioManager.stopVoice();
+
         this.currentScene = scene;
         this.currentDialogue = 0;
 
@@ -316,6 +322,9 @@ class GameEngine {
 
     // 下一段对话
     nextDialogue() {
+        // 停止当前正在播放的语音
+        audioManager.stopVoice();
+        
         // 检查是否有选择分支
         const currentDialogue = this.currentScene.dialogues[this.currentDialogue];
         if (currentDialogue && currentDialogue.choices) {
