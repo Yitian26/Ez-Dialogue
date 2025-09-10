@@ -114,7 +114,7 @@ const storyData = {
         },
         "scene1-two_man_talk": {
             id: "scene1-two_man_talk",
-            video: "assets/videos/s1-two_man_talk.mp4",
+            video: "assets/videos/s1-longtalk.mp4",
             dialogues: [
                 {
                     character: "福尔摩斯",
@@ -126,7 +126,7 @@ const storyData = {
         },
         "scene1-wilson": {
             id: "scene1-wilson",
-            video: "assets/videos/s1-two_man_talk.mp4",
+            video: "assets/videos/s1-jabez-apology.mp4",
             dialogues: [
                 {
                     character: "威尔逊",
@@ -292,12 +292,243 @@ const storyData = {
                 },
                 {
                     character: "威尔逊",
-                    text: "事情是这样的……（案件背景介绍，或其他补充内容）",
+                    text: "事情是这样的……",
                     voice: "assets/audio/voice/extra-10-wilson.wav"
                 }
             ],
-            nextScene: "scene4-evening_env"
+            nextScene: "scene2-jabez_talk"
         },
+
+
+        "scene2-jabez_talk" : {
+            id : "scene2-jabez_talk",
+            video: "assets/videos/s2-jabez_talk.mp4",
+            dialogues: [
+                {
+                    character: "威尔逊",
+                    text: "我在市区附近的萨克斯—科伯格广场开了个小当票。那个买卖不大，近年来我只勉强靠它维持生活。过去还有能力雇用两个伙计，但是，现在只雇一个。就这一伙计我也雇不起啊，如果不是他为学会做这个买卖自愿只拿一半工资的话。",
+                }
+            ],
+            nextScene: "scene2-memory1",
+        },
+
+        "scene2-memory1": {
+            id: "scene2-memory1",
+            image: "assets/images/s2-memory1.png",
+            dialogues: [
+                {
+                    character: "威尔逊的回忆",
+                    text: "他名叫文森特·斯波尔丁。其实他的年纪也不小了，只是到底多大我说不上。福尔摩斯先生，我这个伙计真精明强干。"
+                },
+				{
+					character: "威尔逊的回忆",
+					text: "打扰我们的头一件事是这个广告。正好在八个星期以前的这天，斯波尔丁走到办公室里来，手里拿着这张报纸",
+				},
+				{
+					character: "文森特·斯波尔丁",
+					text: "威尔逊先生，我向上帝祷告，我多么希望我是个红头发的人啊。",
+				},
+				{
+					character: "威尔逊",
+					text: "那是为什么？",
+				},
+				{
+					character: "文森特·斯波尔丁",
+					text: "红发会现在又有了个空缺。谁要是得到这个职位，那简直是发了相当大的财。一年只给二百英镑，但这个工作很轻松，如果你已有别的职务也并不碍事。",
+				},
+				{
+					character: "文森特·斯波尔丁",
+					text: "据我了解，红发会的发起人是一个名叫伊齐基亚·霍普金斯的美国百万富翁。这个人作风很古怪。他自己的头发就是红的，并且对所有红头发的人怀有深厚的感情。从我所听到的来说，待遇很高，要干的活倒很少。",
+				},
+            ],
+
+            nextScene: "scene2-jabez_talk_2"
+        },
+		"scene2-jabez_talk_2" : {
+            id : "scene2-jabez_talk",
+            video: "assets/videos/s2-jabez_talk.mp4",
+            dialogues: [
+                {
+                    character: "威尔逊",
+                    text: "好，你们不难想见，这真使我侧耳恭听啊，因为好些年来，我的生意并不怎么好，这笔额外的二百英镑如能到手，那简直是来得太容易了。",
+                }
+            ],
+            nextScene: "scene2-memory2",
+        },
+        "scene2-memory2" : {
+            id : "scene2-memory2",
+            image: "assets/images/s2-crowded_street.png",
+            dialogues: [
+                {
+                    character: "威尔逊的回忆",
+                    text: "头发颜色深浅不一的人来自东西南北、四面八方，涌到城里按那个广告去应征。舰队街挤满了红头发的人群，“看上去就像叫卖水果的小贩放满广柑的手推车”",
+                }
+            ],
+            nextScene: "scene2-memory3",
+        },
+        "scene2-memory3" : {
+            id : "scene2-memory3",
+            image: "assets/images/s2-memory3.png",
+            dialogues: [
+                {
+                    character: "威尔逊的回忆",
+                    text: "办公桌后面坐着一个头发颜色比我的还要红的小个子男人；每一个候选人走到他跟前，他都说几句，然后他总是想办法在他们身上挑毛病，说他们不合格",
+                },
+                {
+                    character: "威尔逊的回忆",
+                    text: "不管怎么样，轮到我们的时候，这个小个子男人对我比对任何其他人都客气多了",
+                }
+                ,
+                {
+                    character: "邓肯·罗斯",
+                    text: "你非常适合担任这个职务。你满足了我们的一切条件。在我的记忆中，我还没有看见过有谁的头发颜色比你的更好的了。",
+                }
+                ,
+                {
+                    character: "邓肯·罗斯",
+                    text: "不过，对不起，我显然必须谨慎小心，我相信你是不会介意的。我必须谨慎小心，因为我们曾两次被带假发的家伙、一次被染头发的家伙骗了。",
+                }
+            ],
+            nextScene: "scene2-memory3_hair",
+        },
+        "scene2-memory3_hair": {
+            id : "scene2-memory3_hair",
+            image: "assets/images/s2-crouch_hair.png",
+            dialogues: [
+                {
+                    character: "威尔逊的回忆",
+                    text: "他两只手紧紧地揪住我的头发，使劲地拔，我痛得喊了出来，他才撒手。"
+                }
+            ],
+            nextScene: "scene2-jabez_talk3",
+        },
+		
+        "scene2-jabez_talk3" : {
+            id : "scene2-jabez_talk3",
+            video: "assets/videos/s2-jabez_talk.mp4",
+            dialogues: [
+                {
+                    character: "威尔逊的回忆",
+                    text: "我被录用了。那天起，我就成了红发会的一员。"
+                }
+            ],
+            nextScene: "scene2-memory4",
+        },
+
+        "scene2-memory4": {
+            id: "scene2-memory4",
+            video: "assets/videos/s2-memory4.mp4",
+            dialogues: [
+                {
+                    character: "威尔逊的回忆",
+                    text: "我的工作是抄写《大英百科全书》,整个办公时间必须呆在办公室里，或者至少在那楼房里呆着；如果离开，那就是永远放弃了整个职位。"
+                },
+                {
+                    character: "威尔逊的回忆",
+                    text:"事情就这样一天天地继续下去……我抄写了'男修道院院长'、‘盔甲'……并且希望由于我的勤奋努力，不久就可以开始抄写以字母B为首的词条。接着，这整个事情突然宣告结束。",
+                    voice: "assets/audio/voice/c1-9-wilson.wav",
+                },
+            ],
+            nextScene: "scene2-jabez_angry",
+        },
+
+        "scene2-jabez_angry": {
+            id: "scene2-jabez_angry",
+            video: "assets/videos/s2-jabez_angry.mp4",
+            dialogues: [
+                {
+                    character: "威尔逊",
+                    text: "我简直不敢相信自己的眼睛。突然有一天，我收到一张卡片，卡片上写着：“红发会业经解散，此启。一八九○年十月九日",
+                }
+            ],
+            nextScene: "scene2-holmes_laugh",
+        },
+
+        "scene2-holmes_laugh": {
+            id: "scene2-holmes_laugh",
+            video: "assets/videos/s2-holmes_laugh.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: "红发会解散了？这真是太有趣了！"
+                }
+            ],
+            nextScene: "scene2-jabez_angry2",
+        },
+
+        "scene2-jabez_angry2": {
+            id: "scene2-jabez_angry2",
+            video: "assets/videos/s2-jabez_angry.mp4",
+            dialogues: [
+                {
+                    character: "威尔逊",
+                    text: "我看不出有什么可笑的地方！如果你们只会取笑我，那我可以到别处去！",
+                    voice:"assets/audio/voice/c1-10-wilson.wav"
+                }
+            ],
+            nextScene: "scene2-conversation",
+        },
+
+        "scene2-conversation": {
+            id: "scene2-conversation",
+            video: "assets/videos/s1-two_man_talk.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: " 不，不，我真的无论如何不能放过你这个案件。它太不常了。请告诉我，叫你注意广告的那位伙计，他在你那里多久了？",
+                    voice: "assets/audio/voice/c1-11-holmes.wav",
+                },
+                {
+                    character: "威尔逊",
+                    text: " 在发生这件事以前大约一个月。",
+                    voice: "assets/audio/voice/c1-12-wilson.wav",
+                },
+                {
+                    character: "福尔摩斯",
+                    text: " 他是怎么来的？",
+                    voice: "assets/audio/voice/c1-13-holmes.wav",
+                },
+                {
+                    character: "威尔逊",
+                    text: " 他是看广告应征来的。",
+                    voice: "assets/audio/voice/c1-14-wilson.wav",
+                },
+                {
+                    character: "福尔摩斯",
+                    text: " 只有他一个人申请吗？",
+                    voice: "assets/audio/voice/c1-15-holmes.wav",
+                },
+                {
+                    character: "威尔逊",
+                    text: " 威尔逊: 不，有十来个人申请。",
+                    voice: "assets/audio/voice/c1-16-wilson.wav",
+                },
+                {
+                    character: "福尔摩斯",
+                    text: " 你为什么选中他呢？",
+                    voice: "assets/audio/voice/c1-17-holmes.wav",
+                },
+                {
+                    character: "威尔逊",
+                    text: " 因为他灵巧，所费不多。实际上他只领一半工资。",
+                    voice: "assets/audio/voice/c1-18-wilson.wav",
+                },
+            ],
+            nextScene: "scene2-holmes_think",
+        },
+
+        "scene2-holmes_think": {
+            id: "scene2-holmes_think",
+            video: "assets/videos/s2-holmes_think.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: " 渐渐陷于沉思之中......",
+                },
+            ],
+            nextScene: "scene4-evening_env",
+        },
+
         "scene4-evening_env": {
             id: "scene4-evening_env",
             video: "assets/videos/s4-walk_close.mp4",
