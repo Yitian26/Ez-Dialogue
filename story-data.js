@@ -766,6 +766,204 @@ const storyData = {
             nextScene: "scene_a"
         },
 
+        "scene7_branch_a_climbing": {
+            id: "scene7_branch_a_climbing",
+            video: "assets/videos/s7a-climbing_out.mp4",
+            bgm: "assets/audio/bgm/doubt.wav",
+            dialogues: [
+                {
+                    character: "深夜 地下金库",
+                    text: "约翰·克莱跳出地道，他的红发同伙紧随其后"
+                },
+                {
+                    character: "约翰·克莱",
+                    text:"一切都很顺当。你把凿子和袋子都……天啊，不好了！",
+                    voice: "assets/audio/voice/c2-12-clay.wav"
+                },
+            ],
+            nextScene:"scene7_branch_a_holmes_walking",
+        },
+
+        "scene7_branch_a_holmes_walking": {
+            id: "scene7_branch_a_holmes_walking",
+            video: "assets/videos/s7a-holmes_walking.mp4",
+            bgm: "assets/audio/bgm/serious.wav",
+            dialogues: [
+                {
+                    character: "深夜 地下金库",
+                    text:"深暗的金库中，福尔摩斯的身影缓缓显现",
+                },
+            ],
+            nextScene:"scene7_branch_a_holmes_talking",
+        },
+
+        "scene7_branch_a_holmes_talking": {
+            id: "scene7_branch_a_holmes_talking",
+            video: "assets/videos/s7-holmes_talking.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text:"约翰·克莱，那是徒劳的，你逃不过了。",
+                    voice: "assets/audio/voice/c2-13-holmes.wav"
+                },
+                {
+                    character: "约翰·克莱",
+                    text:"我看是这样。你们办事似乎很周到，我应该向你们致敬！",
+                    voice: "assets/audio/voice/c2-14-clay.wav"
+                },
+                {
+                    character: "福尔摩斯",
+                    text:"彼此，彼此。你的那个红发会点子，很新颖，也很有效。",
+                    voice: "assets/audio/voice/c2-15-holmes.wav"
+                },
+            ],
+        },
+
+        "scene7b_caming_in" : {
+            id: "scene7b_caming_in",
+            video: "assets/videos/s7b-caming_in.mp4",
+            bgm: "assets/audio/bgm/doubt.wav",
+            dialogues: [
+                {
+                    character: " 威尔逊的当铺内",
+                    text: "福尔摩斯推门而入"
+                },
+            ],
+            nextScene: "scene7b_slaming_sheet"
+        },
+
+        "scene7b_slaming_sheet" : {
+            id: "scene7b_slaming_sheet",
+            video: "assets/videos/s7b-slaming_sheet.mp4",
+            bgm: "assets/audio/bgm/doubt.wav",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: " 威尔逊先生，看来你最近的“抄写工作”并不顺利啊。手头这么紧，居然还有闲钱输掉几百英镑？",
+                    voice: "assets/audio/voice/c2-24-holmes.wav"
+                },
+            ],
+            nextScene: "scene7b_wilson_shocking"
+        },
+        
+        "scene7b_wilson_shocking" : {
+            id: "scene7b_wilson_shocking",
+            video: "assets/videos/s7b-wilson_shocking.mp4",
+            dialogues: [
+                {
+                    character: "威尔逊",
+                    text: "我……我不知道你在说什么……",
+                    voice: "assets/audio/voice/c2-25-wilson.wav"
+                },
+            ],
+            nextScene: "scene7b_holmes_accusing",
+        },
+
+        "scene7b_holmes_accusing": {
+            id: "scene7b_holmes_accusing",
+            video: "assets/videos/s7b-holmes_accusing.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: "你知道！你编造了一个精彩的故事，一个足以让我都提起兴趣的故事。但你犯了一个错误，你不该留下那张赛马彩票！说吧，你们真正的计划是什么？利用我把谁送进苏格兰场的监狱？",
+                    voice: "assets/audio/voice/c2-26-holmes.wav"
+                },
+            ],
+            nextScene: "scene7b_wilson_admit",
+        },
+
+        "scene7b_wilson_admit": {
+            id: "scene7b_wilson_admit",
+            video: "assets/videos/s7b-wilson_shocking.mp4",
+            dialogues: [
+                {
+                    character: "威尔逊",
+                    text: " 是邓肯·罗斯！或者说威廉·莫里斯！他才是主谋！我们……我们只是被他胁迫的！",
+                    voice: "assets/audio/voice/c2-27-wilson.wav"
+                },
+                {
+                    character: "威尔逊",
+                    text: "我和斯波尔丁因为赌博欠了黑道上罗斯的钱。罗斯发现了银行的秘密，策划了整个劫案，并利用他们来挖地道。红发会是真的，但目的是为了让我这个“局内人”有一个完美的借口去向你报案，从而借刀杀人。",
+                    voice: "assets/audio/voice/c2-28-wilson.wav"
+                },
+            ],
+            nextScene: "scene7b_holmes_conclude",
+        },
+
+        "scene7b_holmes_conclude": {
+            id: "scene7b_holmes_conclude",
+            video: "assets/videos/s7b-holmes_accusing.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: "借刀杀人？我看不见得。恐怕是你们想在最后关头吞掉所有的金子，所以才把我引来，对付你们那个“更危险”的同伙吧？一场完美的黑吃黑。",
+                    voice: "assets/audio/voice/c2-29-holmes.wav"
+                },
+            ],
+        },
+
+        "scene7c_stealing" :{
+            id: "scene7c_stealing",
+            image: "assets/images/s7c-stealing.png",
+            bgm: "assets/audio/bgm/doubt.wav",
+            dialogues: [
+                {
+                    character: "夜晚 法国大使馆商务楼",
+                    text: "克莱和他的同伙迅速进入档案库，他们看都没看四周，径直走向存放协定的保险柜，用熟练的手法开始撬锁。"
+                },
+            ],
+            nextScene: "scene7c_holmes_appears"
+        },
+
+        "scene7c_holmes_appears": {
+            id: "scene7c_holmes_appears",
+            video: "assets/videos/s7c-holmes_appears.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: "....",
+                }
+             ],
+            nextScene: "scene7c_holmes_talking",
+        },
+        "scene7c_holmes_talking": {
+            id: "scene7c_holmes_talking",
+            video: "assets/videos/s7c-holmes_talking.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: "晚上好，克莱先生。看来，你对文学的兴趣，已经超越了《大英百科全书》，转向了国际法领域。",
+                    voice: "assets/audio/voice/c2-36-holmes.wav"
+                },
+            ],
+            nextScene: "scene7c_clay_answer",
+        },
+
+        "scene7c_clay_answer": {
+            id: "scene7c_clay_answer",
+            video: "assets/videos/s7c-clay_answer.mp4",
+            dialogues: [
+                {
+                    character: "约翰·克莱",
+                    text: "福尔摩斯先生！真没想到会在这里见到你。我还以为，此刻的您应该在隔壁，像一条忠诚的看门狗一样，守护着那些闪亮的金属。",
+                    voice: "assets/audio/voice/c2-37-clay.wav"
+                },
+            ],
+            nextScene: "scene7c_holmes_reply",
+        },
+
+        "scene7c_holmes_reply": {
+            id: "scene7c_holmes_reply",
+            video: "assets/videos/s7c-holmes_reply.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: "黄金会贬值，克莱先生，但知识和秘密永远是硬通货。能告诉我你的买家是谁吗？我想，他出的价钱一定远超三万英镑吧。",
+                    voice: "assets/audio/voice/c2-38-holmes.wav"
+                },
+            ],
+        },
+
         "scene_a": {
             id: "scene1-opendoor",
             video: "assets/videos/s1-opendoor.mp4",
