@@ -526,7 +526,59 @@ const storyData = {
                     text: " 渐渐陷于沉思之中......",
                 },
             ],
-            nextScene: "scene4-evening_env",
+            nextScene: "scene3-getout",
+        },
+
+        "scene3-getout": {
+            id: "scene3-getout",
+            video: "assets/videos/s3-getout.mp4",
+            nextScene: "scene3-knock"
+        },
+
+        "scene3-knock": {
+            id: "scene3-knock",
+            video: "assets/videos/s3-knock.mp4",
+            nextScene: "scene3-"
+        },
+
+        "scene3-talk": {
+            id: "scene3-talk",
+            video: "assets/videos/s3-talk.mp4",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: "劳驾，我只想问一下，从这里到斯特兰德怎么走。"
+                },
+                {
+                    character: "文森特·斯波尔丁",
+                    text: "到第三个路口往右拐，到第四个路口再往左拐。"
+                }
+            ],
+            nextScene: "scene3-speak-and-smile"
+        },
+
+        "scene3-speak-and-smile": {
+            id: "scene3-speak-and-smile",
+            video: "assets/videos/s3-speak-and-smile.mp4",
+            dialogues: [
+                {
+                    character: "华生",
+                    text: "显然，威尔逊先生的伙计在这个红发会的神秘事件中起了很大的作用。我相信你去问路不过是为了想看一看他而已。"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "不是看他"
+                },
+                {
+                    character: "华生",
+                    text: "那又是为了什么呢？"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "我的亲爱的大夫，现在是留心观察的时候，而不是谈话的时候。我们是在敌人的领土里进行侦查活动。"
+                }
+            ],
+            nextScene: "scene4-evening_env"
         },
 
         "scene4-evening_env": {
@@ -698,7 +750,7 @@ const storyData = {
                     voice: "assets/audio/voice/c2-9-holmes.wav"
                 }
             ],
-            nextScene: "scene_a"
+            nextScene: "scene6-branch_a"
         },
         "scene5-branch_b_env": {
             id: "scene5-branch_b_env",
@@ -764,6 +816,72 @@ const storyData = {
                 }
             ],
             nextScene: "scene_a"
+        },
+
+        "scene6-branch_a": {
+            id: "scene6-branch_a",
+            video: "assets/videos/s6a-examine.mp4",
+            dialogues: [
+                {
+                    character: "梅里韦瑟",
+                    text: "那是我们的法国黄金。我们向法兰西银行借了三万个法国金币，就装在这些箱子里。"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "现在，我们必须安静地等待。他们只有一条退路，我已经让琼斯派人在当铺门口守着了。华生，如果他们开枪，你就毫不留情地把他们打倒。"
+                }
+            ],
+            nextScene: "scene6-branch_a-handout"
+        },
+        "scene6-branch_a-handout": {
+            id: "scene6-branch_a-handout",
+            video: "assets/videos/s6a-handout.mp4",
+            nextScene: "scene-a"
+        },
+
+        "scene6-branch_b": {
+            id: "scene6-branch_b",
+            video: "assets/videos/s6b-gaze.mp4",
+            dialogues: [
+                {
+                    character: "华生",
+                    text : "威尔逊欺骗了我们！他根本不是那个穷困潦倒、安分守己的店主！"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "他不仅仅是欺骗，华生。他在引导我们。他用一个精心编造的、充满离奇细节的故事，把我们的注意力引向他的伙计和所谓的“红发会”，引向银行劫案……他想让我们为他解决一个他自己不敢面对的麻烦。"
+                },
+                {
+                    character: "华生",
+                    text: "那么……地道和银行呢？"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "哦，那很可能是真的。但故事的重点，恐怕不在那三万英镑的黄金上。走吧，我的朋友，去戳穿这位“可怜”委托人的谎言。"
+                }
+            ],
+            nextScene: "scene-a"
+        },
+
+        "scene6-branch_c": {
+            id: "scene6-branch_c",
+            video: "assets/videos/s6c-hide.mp4",
+            dialogues: [
+                {
+                    character: "芬奇",
+                    text: "存放协定的保险柜就在墙角。我们的人已经撤离，一切都和往常一样。"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "很好。现在，我们需要的是耐心。让我们看看，我们的天才罪犯，是更爱黄金，还是更爱墨水。"
+                }
+            ],
+            nextScene: "scene6-branch_c-handout"
+        },
+        "scene6-branch_c-handout": {
+            id: "scene6-branch_c-handout",
+            video: "assets/videos/s6c-handout.mp4",
+            nextScene: "scene-a"
         },
 
         "scene_a": {
