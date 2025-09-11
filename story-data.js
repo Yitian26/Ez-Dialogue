@@ -181,7 +181,7 @@ const storyData = {
         },
         "scene1-wilson_hand": {
             id: "scene1-wilson_hand",
-            image: "assets/images/s1-env.jpg",
+            image: "assets/images/s1-jabez_sit.png",
             dialogues: [
                 {
                     character: "福尔摩斯",
@@ -193,7 +193,7 @@ const storyData = {
         },
         "scene1-wilson_cuff": {
             id: "scene1-wilson_cuff",
-            image: "assets/images/s1-env.jpg",
+            image: "assets/images/s1-jabez_sit.png",
             dialogues: [
                 {
                     character: "福尔摩斯",
@@ -205,7 +205,7 @@ const storyData = {
         },
         "scene1-question_1": {
             id: "scene1-question_1",
-            image: "assets/images/s1-env.jpg",
+            video: "assets/videos/s2-jabez_talk.mp4",
             dialogues: [
                 {
                     character: "威尔逊",
@@ -217,7 +217,7 @@ const storyData = {
         },
         "scene1-answer_1": {
             id: "scene1-answer_1",
-            image: "assets/images/s1-env.jpg",
+            video: "assets/videos/s1-longtalk.mp4",
             dialogues: [
                 {
                     character: "福尔摩斯",
@@ -229,7 +229,7 @@ const storyData = {
         },
         "scene1-question_2": {
             id: "scene1-question_2",
-            image: "assets/images/s1-env.jpg",
+            video: "assets/videos/s2-jabez_talk.mp4",
             dialogues: [
                 {
                     character: "威尔逊",
@@ -241,7 +241,7 @@ const storyData = {
         },
         "scene1-answer_2": {
             id: "scene1-answer_2",
-            image: "assets/images/s1-env.jpg",
+            video: "assets/videos/s1-longtalk.mp4",
             dialogues: [
                 {
                     character: "福尔摩斯",
@@ -253,7 +253,7 @@ const storyData = {
         },
         "scene1-wilson_laugh": {
             id: "scene1-wilson_laugh",
-            image: "assets/images/s1-env.jpg",
+            video: "assets/videos/s2-jabez_talk.mp4",
             dialogues: [
                 {
                     character: "威尔逊",
@@ -265,7 +265,7 @@ const storyData = {
         },
         "scene1-holmes_ad": {
             id: "scene1-holmes_ad",
-            image: "assets/images/s1-env.jpg",
+            video: "assets/videos/s1-longtalk.mp4",
             dialogues: [
                 {
                     character: "福尔摩斯",
@@ -548,7 +548,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "华生，发生在科伯格广场的事是桩重大案件。有人正在密谋策划一桩重大罪案，我有充分理由相信，我们将及时制止他们。"
+                    text: "华生，发生在科伯格广场的事是桩重大案件。有人正在密谋策划一桩重大罪案，我有充分理由相信，我们将及时制止他们。",
+                    voice: "assets/audio/voice/c2-1-holmes.wav"
                 }
             ],
             // 进入分支判断
@@ -556,7 +557,7 @@ const storyData = {
         },
         "scene4-branch": {
             id: "scene4-branch",
-            image: "assets/images/s4-stand.png ",
+            image: "assets/images/s4-stand.png",
             bgm: "assets/audio/bgm/serious.wav",
             dialogues: [
                 {
@@ -568,7 +569,7 @@ const storyData = {
                             nextScene: "scene4-branch_a"
                         },
                         {
-                            text: "'观察柜台下的纸篓",
+                            text: "观察柜台下的纸篓",
                             nextScene: "scene4-branch_b"
                         }
                     ]
@@ -582,19 +583,21 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "斯波尔丁裤子上的泥土，人行道下的空洞声……线索已经足够清晰。地道的目标，正是紧邻当铺的城市与郊区银行。他们今晚必定动手！"
+                    text: "斯波尔丁裤子上的泥土，人行道下的空洞声……线索已经足够清晰。地道的目标，正是紧邻当铺的城市与郊区银行。他们今晚必定动手！",
+                    voice: "assets/audio/voice/c2-2-holmes.wav"
                 },
             ],
-            nextScene: "scene4-branch_a_question" 
+            nextScene: "scene4-branch_a_question"
         },
         "scene4-branch_a_question": {
             id: "scene4-branch_a_question",
-            image: "assets/images/s4-stand.jpg",
+            image: "assets/images/s4-stand.png",
             bgm: "assets/audio/bgm/serious.wav",
             dialogues: [
                 {
                     character: "华生",
-                    text: "今晚？为什么这么肯定？"
+                    text: "今晚？为什么这么肯定？",
+                    voice: "assets/audio/voice/c2-3-watson.wav"
                 },
             ],
             nextScene: "scene4-branch_a_explain"
@@ -606,9 +609,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "红发会的突然解散，意味着地道已经完工。而且，今天是星期六，他们得手后将有两天时间逃跑。我们没有时间可以浪费了。"
-                },
-                {
+                    text: "红发会的突然解散，意味着地道已经完工。而且，今天是星期六，他们得手后将有两天时间逃跑。我们没有时间可以浪费了。",
+                    voice: "assets/audio/voice/c2-4-holmes.wav",
                     choices: [
                         {
                             text: "同意福尔摩斯，立即行动",
@@ -619,7 +621,7 @@ const storyData = {
                             nextScene: "scene4-branch_a_disagree"
                         }
                     ]
-                }
+                },
             ],
         },
         "scene4-branch_a_disagree": {
@@ -634,17 +636,136 @@ const storyData = {
             ],
             nextScene: "scene5-branch_a_env"
         },
-        "scene5-branch_a_env": {
-            id: "scene5-branch_a_env",
-            video: "assets/videos/s5-env.mp4",
+        "scene4-branch_b": {
+            id: "scene4-branch_b",
+            video: "assets/videos/s4-speak_1.mp4",
             bgm: "assets/audio/bgm/serious.wav",
             dialogues: [
                 {
-                    text: "气氛严肃而紧张。两位新访客的到来，预示着一场大战即将来临。----------------end"
+                    character: "福尔摩斯",
+                    text: "（点燃烟斗，深深吸了一口）地下的情况确实可疑，华生。但是……那张赛马彩票，像一根鱼刺卡在我的思绪里。一个只拿半薪的伙计，却有闲钱参与赌博？这不合逻辑。",
+                    voice: "assets/audio/voice/c2-5-1-holmes.wav"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "同时，当铺背后不仅有银行，还有法国大使馆的商务附属楼。黄金、债务、机密……这盘棋比看上去更复杂。",
+                    voice: "assets/audio/voice/c2-5-2-holmes.wav"
+                },
+                {
+                    choices: [
+                        {
+                            text: "委托人最可疑，先调查赛马彩票的债务",
+                            nextScene: "scene5-branch_b"
+                        },
+                        {
+                            text: "不管怎样，黄金最重要，应该立即前往银行",
+                            nextScene: "scene5-branch_a_env"
+                        },
+                        {
+                            text: "忘掉彩票吧，福尔摩斯。大使馆比银行更有价值！",
+                            nextScene: "scene5-branch_c"
+                        }
+                    ]
+                }
+            ],
+        },
+        "scene5-branch_a_env": {
+            id: "scene5-branch_a_env",
+            video: "assets/videos/s5a-env.mp4",
+            bgm: "assets/audio/bgm/serious.wav",
+            dialogues: [
+                {
+                    text: "气氛严肃而紧张。两位新访客的到来，预示着一场大战即将来临。"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "哈，我们的人都到齐了。华生，我想你认识苏格兰场的琼斯先生吧？让我介绍你认识梅里韦瑟先生，他就要成为我们今晚冒险行动的伙伴。",
+                    voice: "assets/audio/voice/c2-6-holmes.wav"
+                },
+                {
+                    character: "琼斯",
+                    text: "大夫，你瞧，我们又搭档在一起追捕了。我们这位朋友是追捕能手，他只需要一条老狗去帮助他把猎物捕获。",
+                    voice: "assets/audio/voice/c2-7-jones.wav"
+                },
+                {
+                    character: "梅里韦瑟",
+                    text: "我只希望，这次追捕不要成为一桩徒劳无益的行动。我可是错过了二十七年来第一次周六晚上的桥牌会！",
+                    voice: "assets/audio/voice/c2-8-merryweather.wav"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "我想你会发现，今天晚上你下的赌注比以往都大。梅里韦瑟先生，对你来说，赌注是三万英镑的法国黄金；而琼斯先生，对你来说，赌注是你一直想逮捕的约翰·克莱。",
+                    voice: "assets/audio/voice/c2-9-holmes.wav"
                 }
             ],
             nextScene: "scene_a"
         },
+        "scene5-branch_b_env": {
+            id: "scene5-branch_b_env",
+            video: "assets/videos/s5b-env.mp4",
+            bgm: "assets/audio/bgm/serious.wav",
+            dialogues: [
+                {
+                    text: "烟雾缭绕，人声鼎沸。空气中混杂着啤酒、烟草和劣质香水的味道。人们在高声谈论着白天的赛马结果。"
+                },
+            ]
+        },
+        "scene5-branch_b_speak":{
+            id: "scene5-branch_b_speak",
+            video: "assets/videos/s5b-speak.mp4",
+            bgm: "assets/audio/bgm/serious.wav",
+            dialogues: [
+                {
+                    character: "福尔摩斯",
+                    text: "（将一张复制的彩票图样推到男人面前）我们想打听一下买这张彩票的人。"
+                },
+                {
+                    character: "经纪人",
+                    text: "（瞥了一眼）哦？有点印象。最近手气不太好的一个家伙。是个当铺老板，叫……威尔逊。对，就是他。"
+                },
+                {
+                    character: "华生",
+                    text: "威尔逊？你确定是他本人？而不是他的伙计？"
+                },
+                {
+                    character: "经纪人",
+                    text: "当然是。他最近输惨了，欠了我一大笔钱。还说很快就有一大笔进项能还上。怎么，你们是来替他还钱的？"
+                }
+            ],
+            nextScene: "scene_a"
+        },
+        "scene5-branch_c": {
+            id: "scene5-branch_c",
+            video: "assets/videos/s5c.mp4",
+            bgm: "assets/audio/bgm/serious.wav",
+            dialogues: [
+                {
+                    text: "气氛更加诡秘，带着一丝政治上的紧张。来访者芬奇先生西装革履，举止一丝不苟，眼神锐利，与警察或银行家截然不同。"
+                },
+                {
+                    character: "芬奇",
+                    text: "（递上信件）福尔摩斯先生，你的兄长迈克罗夫特向我们推荐了你。他认为，只有你能在不惊动任何人的情况下，处理好这次“潜在的国际纠纷”。"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "（阅信后，烧掉信件）“纠纷”？先生，我面对的是一桩罪案。"
+                },
+                {
+                    character: "芬奇",
+                    text: "（推了推眼镜）对我们而言，罪案的后果就是纠纷。法国大使馆的商务楼里，存放着即将签订的《英法航海贸易协定》的草案副本。如果它在正式签署前被泄露给第三方……比如德国人，那后果将是灾难性的。"
+                },
+                {
+                    character: "华生",
+                    text: "他们真正的目标是这个？那三万英镑的黄金只是个幌子？"
+                },
+                {
+                    character: "福尔摩斯",
+                    text: "（兴奋地）一个绝妙的烟幕弹！华生，如此大手笔，只为了一次完美的误导。约翰·克莱，他的祖父是王室公爵，他本人受过高等教育。他的目标，怎么可能只是那些俗气的金块呢？"
+                }
+            ],
+            nextScene: "scene_a"
+        },
+
         "scene_a": {
             id: "scene1-opendoor",
             video: "assets/videos/s1-opendoor.mp4",
