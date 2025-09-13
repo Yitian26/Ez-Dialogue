@@ -307,6 +307,7 @@ const storyData = {
                 {
                     character: "威尔逊",
                     text: "我在市区附近的萨克斯—科伯格广场开了个小当票。那个买卖不大，近年来我只勉强靠它维持生活。过去还有能力雇用两个伙计，但是，现在只雇一个。就这一伙计我也雇不起啊，如果不是他为学会做这个买卖自愿只拿一半工资的话。",
+                    voice:"assets/audio/voice/extra-11-1-wilson.wav"
                 }
             ],
             nextScene: "scene2-memory1",
@@ -318,27 +319,33 @@ const storyData = {
             dialogues: [
                 {
                     character: "威尔逊的回忆",
-                    text: "他名叫文森特·斯波尔丁。其实他的年纪也不小了，只是到底多大我说不上。福尔摩斯先生，我这个伙计真精明强干。"
+                    text: "他名叫文森特·斯波尔丁。其实他的年纪也不小了，只是到底多大我说不上。福尔摩斯先生，我这个伙计真精明强干。",
+                    voice:"assets/audio/voice/extra-12-wilson.wav"
                 },
 				{
 					character: "威尔逊的回忆",
-					text: "打扰我们的头一件事是这个广告。正好在八个星期以前的这天，斯波尔丁走到办公室里来，手里拿着这张报纸",
+                    text: "打扰我们的头一件事是这个广告。正好在八个星期以前的这天，斯波尔丁走到办公室里来，手里拿着这张报纸",
+                    voice:"assets/audio/voice/extra-13-wilson.wav"
 				},
 				{
 					character: "文森特·斯波尔丁",
-					text: "威尔逊先生，我向上帝祷告，我多么希望我是个红头发的人啊。",
+                    text: "威尔逊先生，我向上帝祷告，我多么希望我是个红头发的人啊。",
+                    voice:"assets/audio/voice/extra-13-spaulding.wav"
 				},
 				{
 					character: "威尔逊",
 					text: "那是为什么？",
+					voice:"assets/audio/voice/extra-14-wilson.wav"
 				},
 				{
 					character: "文森特·斯波尔丁",
-					text: "红发会现在又有了个空缺。谁要是得到这个职位，那简直是发了相当大的财。一年只给二百英镑，但这个工作很轻松，如果你已有别的职务也并不碍事。",
+                    text: "红发会现在又有了个空缺。谁要是得到这个职位，那简直是发了相当大的财。一年只给二百英镑，但这个工作很轻松，如果你已有别的职务也并不碍事。",
+                    voice:"assets/audio/voice/extra-15-spaulding.wav"
 				},
 				{
 					character: "文森特·斯波尔丁",
-					text: "据我了解，红发会的发起人是一个名叫伊齐基亚·霍普金斯的美国百万富翁。这个人作风很古怪。他自己的头发就是红的，并且对所有红头发的人怀有深厚的感情。从我所听到的来说，待遇很高，要干的活倒很少。",
+                    text: "据我了解，红发会的发起人是一个名叫伊齐基亚·霍普金斯的美国百万富翁。这个人作风很古怪。他自己的头发就是红的，并且对所有红头发的人怀有深厚的感情。从我所听到的来说，待遇很高，要干的活倒很少。",
+                    voice:"assets/audio/voice/extra-16-spaulding.wav"
 				},
             ],
 
@@ -351,6 +358,7 @@ const storyData = {
                 {
                     character: "威尔逊",
                     text: "好，你们不难想见，这真使我侧耳恭听啊，因为好些年来，我的生意并不怎么好，这笔额外的二百英镑如能到手，那简直是来得太容易了。",
+                    voice:"assets/audio/voice/extra-17-wilson.wav"
                 }
             ],
             nextScene: "scene2-memory2",
@@ -362,6 +370,7 @@ const storyData = {
                 {
                     character: "威尔逊的回忆",
                     text: "头发颜色深浅不一的人来自东西南北、四面八方，涌到城里按那个广告去应征。舰队街挤满了红头发的人群，“看上去就像叫卖水果的小贩放满广柑的手推车”",
+                    voice:"assets/audio/voice/extra-18-wilson.wav"
                 }
             ],
             nextScene: "scene2-memory3",
@@ -373,20 +382,24 @@ const storyData = {
                 {
                     character: "威尔逊的回忆",
                     text: "办公桌后面坐着一个头发颜色比我的还要红的小个子男人；每一个候选人走到他跟前，他都说几句，然后他总是想办法在他们身上挑毛病，说他们不合格",
+                    voice:"assets/audio/voice/extra-19-wilson.wav"
                 },
                 {
                     character: "威尔逊的回忆",
                     text: "不管怎么样，轮到我们的时候，这个小个子男人对我比对任何其他人都客气多了",
+                    voice:"assets/audio/voice/extra-20-wilson.wav"
                 }
                 ,
                 {
                     character: "邓肯·罗斯",
                     text: "你非常适合担任这个职务。你满足了我们的一切条件。在我的记忆中，我还没有看见过有谁的头发颜色比你的更好的了。",
+                    voice:"assets/audio/voice/extra-21-ross.wav"
                 }
                 ,
                 {
                     character: "邓肯·罗斯",
                     text: "不过，对不起，我显然必须谨慎小心，我相信你是不会介意的。我必须谨慎小心，因为我们曾两次被带假发的家伙、一次被染头发的家伙骗了。",
+                    voice:"assets/audio/voice/extra-22-ross.wav"
                 }
             ],
             nextScene: "scene2-memory3_hair",
@@ -397,7 +410,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "威尔逊的回忆",
-                    text: "他两只手紧紧地揪住我的头发，使劲地拔，我痛得喊了出来，他才撒手。"
+                    text: "他两只手紧紧地揪住我的头发，使劲地拔，我痛得喊了出来，他才撒手。",
+                    voice:"assets/audio/voice/extra-23-wilson.wav"
                 }
             ],
             nextScene: "scene2-jabez_talk3",
@@ -409,7 +423,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "威尔逊的回忆",
-                    text: "我被录用了。那天起，我就成了红发会的一员。"
+                    text: "我被录用了。那天起，我就成了红发会的一员。",
+                    voice:"assets/audio/voice/extra-24-wilson.wav"
                 }
             ],
             nextScene: "scene2-memory4",
@@ -421,7 +436,8 @@ const storyData = {
             dialogues: [
                 {
                     character: "威尔逊的回忆",
-                    text: "我的工作是抄写《大英百科全书》,整个办公时间必须呆在办公室里，或者至少在那楼房里呆着；如果离开，那就是永远放弃了整个职位。"
+                    text: "我的工作是抄写《大英百科全书》,整个办公时间必须呆在办公室里，或者至少在那楼房里呆着；如果离开，那就是永远放弃了整个职位。",
+                    voice: "assets/audio/voice/extra-25-wilson.wav",
                 },
                 {
                     character: "威尔逊的回忆",
@@ -439,6 +455,7 @@ const storyData = {
                 {
                     character: "威尔逊",
                     text: "我简直不敢相信自己的眼睛。突然有一天，我收到一张卡片，卡片上写着：“红发会业经解散，此启。一八九○年十月九日",
+                    voice:"assets/audio/voice/extra-26-wilson.wav"
                 }
             ],
             nextScene: "scene2-holmes_laugh",
@@ -551,11 +568,13 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "劳驾，我只想问一下，从这里到斯特兰德怎么走。"
+                    text: "劳驾，我只想问一下，从这里到斯特兰德怎么走。",
+                    voice:"assets/audio/voice/c1-19-holmes.wav"
                 },
                 {
                     character: "文森特·斯波尔丁",
-                    text: "到第三个路口往右拐，到第四个路口再往左拐。"
+                    text: "到第三个路口往右拐，到第四个路口再往左拐。",
+                    voice:"assets/audio/voice/c1-20-spolding.wav"
                 }
             ],
             nextScene: "scene3-speak-and-smile"
@@ -567,19 +586,23 @@ const storyData = {
             dialogues: [
                 {
                     character: "华生",
-                    text: "显然，威尔逊先生的伙计在这个红发会的神秘事件中起了很大的作用。我相信你去问路不过是为了想看一看他而已。"
+                    text: "显然，威尔逊先生的伙计在这个红发会的神秘事件中起了很大的作用。我相信你去问路不过是为了想看一看他而已。",
+                    voice: "assets/audio/voice/c1-21-watson.wav"
                 },
                 {
                     character: "福尔摩斯",
-                    text: "不是看他"
+                    text: "不是看他",
+                    voice: "assets/audio/voice/c1-22-holmes.wav"
                 },
                 {
                     character: "华生",
-                    text: "那又是为了什么呢？"
+                    text: "那又是为了什么呢？",
+                    voice: "assets/audio/voice/c1-23-watson.wav"
                 },
                 {
                     character: "福尔摩斯",
-                    text: "我的亲爱的大夫，现在是留心观察的时候，而不是谈话的时候。我们是在敌人的领土里进行侦查活动。"
+                    text: "我的亲爱的大夫，现在是留心观察的时候，而不是谈话的时候。我们是在敌人的领土里进行侦查活动。",
+                    voice: "assets/audio/voice/c1-24-holmes.wav"
                 }
             ],
             nextScene: "scene4-evening_env"
@@ -773,19 +796,23 @@ const storyData = {
             dialogues: [
                 {
                     character: "福尔摩斯",
-                    text: "（将一张复制的彩票图样推到男人面前）我们想打听一下买这张彩票的人。"
+                    text: "（将一张复制的彩票图样推到男人面前）我们想打听一下买这张彩票的人。",
+                    voice: "assets/audio/voice/c2-16-holmes.wav"
                 },
                 {
                     character: "经纪人",
-                    text: "（瞥了一眼）哦？有点印象。最近手气不太好的一个家伙。是个当铺老板，叫……威尔逊。对，就是他。"
+                    text: "（瞥了一眼）哦？有点印象。最近手气不太好的一个家伙。是个当铺老板，叫……威尔逊。对，就是他。",
+                    voice: "assets/audio/voice/c2-17-broker.wav"
                 },
                 {
                     character: "华生",
-                    text: "威尔逊？你确定是他本人？而不是他的伙计？"
+                    text: "威尔逊？你确定是他本人？而不是他的伙计？",
+                    voice: "assets/audio/voice/c2-18-watson.wav"
                 },
                 {
                     character: "经纪人",
-                    text: "当然是。他最近输惨了，欠了我一大笔钱。还说很快就有一大笔进项能还上。怎么，你们是来替他还钱的？"
+                    text: "当然是。他最近输惨了，欠了我一大笔钱。还说很快就有一大笔进项能还上。怎么，你们是来替他还钱的？",
+                    voice: "assets/audio/voice/c2-19-broker.wav"
                 }
             ],
             nextScene: "scene_a"
@@ -800,23 +827,28 @@ const storyData = {
                 },
                 {
                     character: "芬奇",
-                    text: "（递上信件）福尔摩斯先生，你的兄长迈克罗夫特向我们推荐了你。他认为，只有你能在不惊动任何人的情况下，处理好这次“潜在的国际纠纷”。"
+                    text: "（递上信件）福尔摩斯先生，你的兄长迈克罗夫特向我们推荐了你。他认为，只有你能在不惊动任何人的情况下，处理好这次“潜在的国际纠纷”。",
+                    voice: "assets/audio/voice/c2-29-finch.wav"
                 },
                 {
                     character: "福尔摩斯",
-                    text: "（阅信后，烧掉信件）“纠纷”？先生，我面对的是一桩罪案。"
+                    text: "（阅信后，烧掉信件）“纠纷”？先生，我面对的是一桩罪案。",
+                    voice: "assets/audio/voice/c2-30-holmes.wav"
                 },
                 {
                     character: "芬奇",
-                    text: "（推了推眼镜）对我们而言，罪案的后果就是纠纷。法国大使馆的商务楼里，存放着即将签订的《英法航海贸易协定》的草案副本。如果它在正式签署前被泄露给第三方……比如德国人，那后果将是灾难性的。"
+                    text: "（推了推眼镜）对我们而言，罪案的后果就是纠纷。法国大使馆的商务楼里，存放着即将签订的《英法航海贸易协定》的草案副本。如果它在正式签署前被泄露给第三方……比如德国人，那后果将是灾难性的。",
+                    voice: "assets/audio/voice/c2-31-finch.wav"
                 },
                 {
                     character: "华生",
-                    text: "他们真正的目标是这个？那三万英镑的黄金只是个幌子？"
+                    text: "他们真正的目标是这个？那三万英镑的黄金只是个幌子？",
+                    voice: "assets/audio/voice/c2-32-watson.wav"
                 },
                 {
                     character: "福尔摩斯",
-                    text: "（兴奋地）一个绝妙的烟幕弹！华生，如此大手笔，只为了一次完美的误导。约翰·克莱，他的祖父是王室公爵，他本人受过高等教育。他的目标，怎么可能只是那些俗气的金块呢？"
+                    text: "（兴奋地）一个绝妙的烟幕弹！华生，如此大手笔，只为了一次完美的误导。约翰·克莱，他的祖父是王室公爵，他本人受过高等教育。他的目标，怎么可能只是那些俗气的金块呢？",
+                    voice: "assets/audio/voice/c2-33-holmes.wav"
                 }
             ],
             nextScene: "scene_a"
@@ -1026,11 +1058,13 @@ const storyData = {
             dialogues: [
                 {
                     character: "梅里韦瑟",
-                    text: "那是我们的法国黄金。我们向法兰西银行借了三万个法国金币，就装在这些箱子里。"
+                    text: "那是我们的法国黄金。我们向法兰西银行借了三万个法国金币，就装在这些箱子里。",
+                    voice:"assets/audio/voice/c2-10-merryweather.wav"
                 },
                 {
                     character: "福尔摩斯",
-                    text: "现在，我们必须安静地等待。他们只有一条退路，我已经让琼斯派人在当铺门口守着了。华生，如果他们开枪，你就毫不留情地把他们打倒。"
+                    text: "现在，我们必须安静地等待。他们只有一条退路，我已经让琼斯派人在当铺门口守着了。华生，如果他们开枪，你就毫不留情地把他们打倒。",
+                    voice:"assets/audio/voice/c2-11-holmes.wav"
                 }
             ],
             nextScene: "scene6-branch_a-handout"
@@ -1048,19 +1082,23 @@ const storyData = {
             dialogues: [
                 {
                     character: "华生",
-                    text : "威尔逊欺骗了我们！他根本不是那个穷困潦倒、安分守己的店主！"
+                    text: "威尔逊欺骗了我们！他根本不是那个穷困潦倒、安分守己的店主！",
+                    voice:"assets/audio/voice/c2-20-watson.wav"
                 },
                 {
                     character: "福尔摩斯",
-                    text: "他不仅仅是欺骗，华生。他在引导我们。他用一个精心编造的、充满离奇细节的故事，把我们的注意力引向他的伙计和所谓的“红发会”，引向银行劫案……他想让我们为他解决一个他自己不敢面对的麻烦。"
+                    text: "他不仅仅是欺骗，华生。他在引导我们。他用一个精心编造的、充满离奇细节的故事，把我们的注意力引向他的伙计和所谓的“红发会”，引向银行劫案……他想让我们为他解决一个他自己不敢面对的麻烦。",
+                    voice:"assets/audio/voice/c2-21-holmes.wav"
                 },
                 {
                     character: "华生",
-                    text: "那么……地道和银行呢？"
+                    text: "那么……地道和银行呢？",
+                    voice:"assets/audio/voice/c2-22-watson.wav"
                 },
                 {
                     character: "福尔摩斯",
-                    text: "哦，那很可能是真的。但故事的重点，恐怕不在那三万英镑的黄金上。走吧，我的朋友，去戳穿这位“可怜”委托人的谎言。"
+                    text: "哦，那很可能是真的。但故事的重点，恐怕不在那三万英镑的黄金上。走吧，我的朋友，去戳穿这位“可怜”委托人的谎言。",
+                    voice:"assets/audio/voice/c2-23-holmes.wav"
                 }
             ],
             nextScene: "scene7b_caming_in"
@@ -1072,11 +1110,13 @@ const storyData = {
             dialogues: [
                 {
                     character: "芬奇",
-                    text: "存放协定的保险柜就在墙角。我们的人已经撤离，一切都和往常一样。"
+                    text: "存放协定的保险柜就在墙角。我们的人已经撤离，一切都和往常一样。",
+                    voice:"assets/audio/voice/c2-34-finch.wav"
                 },
                 {
                     character: "福尔摩斯",
-                    text: "很好。现在，我们需要的是耐心。让我们看看，我们的天才罪犯，是更爱黄金，还是更爱墨水。"
+                    text: "很好。现在，我们需要的是耐心。让我们看看，我们的天才罪犯，是更爱黄金，还是更爱墨水。",
+                    voice:"assets/audio/voice/c2-35-holmes.wav"
                 }
             ],
             nextScene: "scene7c_stealing"
@@ -1085,29 +1125,7 @@ const storyData = {
             id: "scene6-branch_c-handout",
             video: "assets/videos/s6c-handout.mp4",
             dialogues: [],
-            nextScene: "scene-a"
-        },
-
-        "scene_a": {
-            id: "scene1-opendoor",
-            video: "assets/videos/s1-opendoor.mp4",
-            dialogues: [
-                {
-                    text:"this is scene A"
-                }
-            ],
-            nextScene: "scene1-d1"
-        },
-
-        "scene_b": {
-            id: "scene1-opendoor",
-            video: "assets/videos/s1-opendoor.mp4",
-            dialogues: [
-                {
-                    text:"this is scene B"
-                }
-            ],
-            nextScene: "scene1-d1"
+            nextScene: "scene6-branch_c-handout"
         },
     },
     
