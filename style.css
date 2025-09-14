@@ -131,54 +131,90 @@ body {
     }
 }
 
-/* 字幕容器 */
+/* 字幕/对话容器（底部文本框） */
 #subtitleContainer {
     width: 100%;
     height: 30vh;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
-    padding: 20px;
+    /* 渐变+玻璃拟态背景，让底部更聚焦，读字更清晰 */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(10, 10, 14, 0.75) 28%, rgba(10, 10, 14, 0.9) 100%);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    padding: 24px 28px 96px; /* 进一步增大底部内边距，使角色名与文本更靠上 */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center; /* 居中内部内容，便于控制最大宽度 */
     position: relative;
+    box-shadow: inset 0 -18px 40px rgba(0, 0, 0, 0.6);
 }
 
+/* 顶部细节装饰条（柔和金色） */
+#subtitleContainer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(92vw, 1100px);
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0) 0%, rgba(255, 215, 0, 0.45) 50%, rgba(255, 215, 0, 0) 100%);
+    opacity: 0.8;
+}
+
+/* 角色名徽标（胶囊标签风格） */
 #characterName {
     color: #ffd700;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-#subtitleText {
-    color: white;
     font-size: 16px;
-    line-height: 1.6;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-    min-height: 60px;
-    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    background: linear-gradient(145deg, rgba(255, 215, 0, 0.08), rgba(255, 215, 0, 0.02));
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    width: min(92vw, 1100px);
 }
 
+/* 对话文本主体 */
+#subtitleText {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.75;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    min-height: 68px;
+    cursor: pointer;
+    width: min(92vw, 1100px);
+}
+
+/* 继续指示箭头 */
 #continueIndicator {
     position: absolute;
-    bottom: 20px;
-    right: 30px;
+    bottom: 16px;
+    right: 24px;
     color: #ffd700;
     font-size: 20px;
-    animation: bounce 1s infinite;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+    animation: bounce 1.2s infinite ease-in-out;
+    opacity: 0.9;
 }
 
 @keyframes bounce {
 
     0%,
     100% {
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
 
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-8px) scale(1.05);
     }
+}
+
+/* 悬停轻微高亮（桌面端） */
+#subtitleContainer:hover #subtitleText {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 /* 选择分支容器 */

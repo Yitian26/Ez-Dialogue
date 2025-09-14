@@ -250,7 +250,13 @@ class GameEngine {
         }
 
         // 显示角色名
-        this.elements.characterName.textContent = dialogue.character || '';
+        if (dialogue.character) {
+            this.elements.characterName.textContent = dialogue.character;
+            this.elements.characterName.style.display = '';
+        } else {
+            this.elements.characterName.textContent = '';
+            this.elements.characterName.style.display = 'none';
+        }
 
         // 打字机效果显示文本
         this.typewriterEffect(dialogue.text);

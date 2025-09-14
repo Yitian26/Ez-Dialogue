@@ -2,7 +2,7 @@
 """
 简单的本地HTTP服务器，用于运行互动游戏
 使用方法：python serve.py
-然后访问：http://localhost:8000
+然后访问：http://localhost:8080
 """
 
 import http.server
@@ -11,7 +11,7 @@ import webbrowser
 import os
 import sys
 
-PORT = 8000
+PORT = 8080
 
 
 class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
@@ -30,12 +30,9 @@ def main():
 
     try:
         with socketserver.TCPServer(("", PORT), MyHTTPRequestHandler) as httpd:
-            print(f"🎮 互动游戏服务器启动成功！")
-            print(f"📁 服务目录: {script_dir}")
-            print(f"🌐 访问地址: http://localhost:{PORT}")
-            print(f"🔥 在浏览器中打开游戏...")
-            print(f"⚠️  按 Ctrl+C 停止服务器")
-            print("-" * 50)
+            print(f"服务器启动成功！")
+            print(f"服务目录: {script_dir}")
+            print(f"访问地址: http://localhost:{PORT}")
 
             # 自动打开浏览器
             webbrowser.open(f"http://localhost:{PORT}")
@@ -44,14 +41,10 @@ def main():
             httpd.serve_forever()
 
     except KeyboardInterrupt:
-        print(f"\n🛑 服务器已停止")
+        print(f"服务器已停止")
         httpd.server_close()
     except OSError as e:
-        if e.errno == 10048:  # Windows: 端口被占用
-            print(f"❌ 端口 {PORT} 被占用，请尝试关闭其他服务或使用不同端口")
-            print(f"💡 您也可以修改 serve.py 中的 PORT = {PORT} 为其他值")
-        else:
-            print(f"❌ 启动服务器时出错: {e}")
+        print(f"❌ 启动服务器时出错: {e}")
     except Exception as e:
         print(f"❌ 未知错误: {e}")
 
